@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="main.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
+  />
+  <body id="home" class="w3-black">
+    <!-- Navigation -->
+    <ul>
+        <nav class="w3-bar">
+            <a href="#home" class="w3-button w3-bar-item">Home</a>
+            <a href="#about" class="w3-button w3-bar-item">About</a>
+            <a href="#journey" class="w3-button w3-bar-item" style="text-align: right;">Journey</a>
+            <a href="#contact" class="w3-button w3-bar-item" style="right: 20px; position: absolute;">Contact</a>
+        </nav>
+    </ul>
+
+    <!-- Slide Show -->
+    <section class="center">
+        <img class="mySlides" src="assets/journey_1.jpg" style="width: 100%;" />
+        <img class="mySlides" src="assets/journey_2.jpg" style="width: 100%;" />
+        <img class="mySlides" src="assets/journey_3.jpg" style="width: 100%;" />
+        <img class="mySlides" src="assets/journey_4.jpg" style="width: 100%;" />
+        <img class="mySlides" src="assets/journey_5.jpg" style="width: 100%;" />
+        <img class="mySlides" src="assets/journey_6.jpg" style="width: 100%;" />
+        <img class="mySlides" src="assets/journey_7.jpg" style="width: 100%;" />
+        <img class="mySlides" src="assets/journey_8.jpg" style="width: 100%;" />
+        <img class="mySlides" src="assets/journey_9.jpg" style="width: 100%;" />
+    </section>
+
+    <!-- Band Description -->
+    <section
+      class="w3-container w3-center w3-content"
+      style="max-width: 600px;"
+    >
+      <h2 id="journey" class="w3-wide">My Journey</h2>
+      <p class="w3-opacity"><i>Travel looking for identity</i></p>
+      <p class="w3-justify">
+        My own journey of looking for identity. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua.
+      </p>
+    </section>
+
+    <!-- Band Members -->
+    <section class="w3-row-padding w3-center w3-light-grey">
+      <article class="w3-first">
+        <p id="about">Ruth</p>
+        <img src="/assets/me.webp" alt="Random Name" style="width: 20%; border-radius: 100%;" />
+        <p>Ruth, just a ordinary person.</p>
+      </article>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+      <a href="#"><i class="fa fa-facebook-official"></i></a>
+      <a href="#"><i class="fa fa-pinterest-p"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-flickr"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <p class="w3-medium">
+        Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // Automatic Slideshow - change image every 3 seconds
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 3000);
+      }
+    </script>
+  </body>
+</html>
